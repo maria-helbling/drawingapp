@@ -24,12 +24,12 @@ $(function(){
 
     var socket = io.connect(url);
         //test code start
-        socket.on('connect', function(data) {
-           socket.emit('join', 'Hello World from client');
-        });
-        socket.on('messages', function(data) {
-                alert(data);
-        });
+        //socket.on('connect', function(data) {
+        //   socket.emit('join', 'Hello World from client');
+        //});
+        //socket.on('messages', function(data) {
+        //        alert(data);
+        //});
         //test code end
     socket.on('moving', function (data) {
         if(!(data.id in clients)){

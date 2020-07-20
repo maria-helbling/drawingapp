@@ -17,12 +17,12 @@ app.get('/',(req, res, next)=>{
 io.on('connection', function(socket){
     console.log('Client connected...')
     //start listening for mouse move events
-    //socket.on('mousemove', function(data){
-    socket.on('join', function(data){
+    socket.on('mousemove', function(data){
+    //socket.on('join', function(data){
         //This line sends the event (broadcasts it) to everyone except the original client.
-        //socket.broadcast.emit('moving', data);
+        socket.broadcast.emit('moving', data);
         console.log(data)
-        socket.broadcast.emit('message', 'Hello from server')
+        //socket.broadcast.emit('message', 'Hello from server')
     });
 });
 
