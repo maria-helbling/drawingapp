@@ -34,7 +34,7 @@ $(function(){
     socket.on('moving', function (data) {
         if(!(data.id in clients)){
             //a new user has come online. create a cursor for them
-            cursors[data.id] =  $('<div class="ćursor">').appenTo('#cursor');
+            cursors[data.id] =  $('<div class="ćursor">').appendTo('#cursor');
         }
 
         //move the mouse pointer
