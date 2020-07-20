@@ -5,7 +5,7 @@ $(function(){
         return false;
     }
     //URL of my web server
-    var url = 'http://localhost:8080';
+    var url = 'https://mhpracticedrawing.herokuapp.com/';
 
     var doc = $(document);
     var win = $(window);

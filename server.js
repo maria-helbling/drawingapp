@@ -21,7 +21,6 @@ io.on('connection', function(socket){
     //socket.on('join', function(data){
         //This line sends the event (broadcasts it) to everyone except the original client.
         socket.broadcast.emit('moving', data);
-        console.log(data)
         //socket.broadcast.emit('message', 'Hello from server')
     });
 });
