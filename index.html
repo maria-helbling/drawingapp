@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing game based on Tutorialize</title>
+</head>
+<body>
+    <div id="cursors">
+
+    </div>    
+    <canvas id="paper" width="1900" height="1000"></canvas>
+
+    <hgroup id="instructions">
+        <h1>Draw anywhere!</h1>
+        <h2>You will see everyone else who's doing the same.</h2>
+        <h3>Tip: if the stage gets dirty, simply reload the page</h3>
+    </hgroup>
+
+    <!-- JavaScript includes. Notice that socket.io.js is served by node.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
